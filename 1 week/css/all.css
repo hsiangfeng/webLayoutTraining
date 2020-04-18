@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Reset End */
+
+/* 通用設置 */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: PingFangTC-Light, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-h2 {
+  font-family: PingFangTC-Medium, sans-serif;
+  font-size: 32px;
+  line-height: 45px;
+  display: flex;
+  border-bottom: 1px solid #000000;
+}
+
+.small-title {
+  font-size: 24px;
+  color: #A00404;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pb-32 {
+  padding-bottom: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+ margin-bottom: 32px;
+}
+
+.mb-72 {
+  margin-bottom: 72px;
+}
+
+
+/* 通用設置結束 */
+
+/* header */
+
+.header__h1 {
+  font-family: 'Andale Mono', sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  border-bottom: 2px solid #000000;
+}
+
+.header__avatar {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* header end */
+
+/* profile */
+
+.profile__list li{
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 32px;
+}
+
+.profile li:nth-child(1) {
+  position: relative;
+}
+
+.profile li:nth-child(1)::before {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #96A9C4;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+
+/* profile end */
+
+/* education */
+
+.education__list li {
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.education__list li::before {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #96A9C4;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+
+.education__list li::after {
+  content: ' ';
+  width: 1px;
+  height: 100%;
+  background-color: #96A9C4;
+  position: absolute;
+  left: 12px;
+  top: 20%;
+}
+
+.education__list li:last-child::after {
+  height: 0;
+}
+
+/* education end */
+
+
+/* skills */
+.skills {
+  position: relative;
+}
+
+.skills__content {
+  position: relative;
+  padding-top: 24px;
+  padding-left: 102px;
+  padding-right: 102px;
+  padding-bottom: 56px;
+}
+
+.skills::before {
+  content: ' ';
+  background-color: #96A9C4;
+  width: 100%;
+  height: 360px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skills__content {
+  background-color: #415165;
+}
+
+.skills__title {
+  color: #ffffff;
+  border-color: #ffffff;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.skills__small {
+  color: #ffffff;
+}
+
+.skills__list {
+  color: #ffffff;
+  border-left: 1px solid #96A9C4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding-left: 24px;
+  width: 217px;
+  margin: 0 auto;
+  
+}
+
+.skills__list li {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.skills__list li:last-child {
+  margin-bottom: 0px;
+}
+
+/* skills end */
+
+
+/* work-experience */
+
+.work-experience__list {
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+}
+
+.work-experience__list--logo {
+  margin-top: 8px;
+  margin-bottom: 8.15px;
+}
+
+.work-experience__list--tree {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.work-experience__list li {
+  margin-bottom: 32px;
+}
+
+.work-experience__list li:last-child{
+  margin-bottom: 0px;
+}
+
+.work-experience__list li h4{
+  font-family: PingFangTC-Medium, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.work-experience__list li p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* work-experience end */
+
+/* footer */
+
+.footer {
+  background-color: #415165;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.footer__title {
+  color: #ffffff;
+  border-color: #ffffff;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer__small {
+  color: #ffffff;
+}
+
+.footer__list {
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__list li {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.footer__list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__list li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__list__community {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__list__community li {
+  margin-right: 24px;
+}
+
+.footer__list__community li:last-child {
+  margin-right: 0px;
+}
