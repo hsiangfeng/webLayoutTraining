@@ -80,7 +80,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       path: path.resolve(__dirname, 'dist'),
-      filename: 'css/all.min.css',
+      filename: 'css/all.css',
     }),
   ],
 };
