@@ -1,0 +1,44 @@
+.recommend {
+  margin-top: -271px;
+}
+
+.recommend__list {
+  $mathWidth: (1200px - (24/3)) / 4;
+  display: flex;
+  justify-content: center;
+  
+  li {
+    width: $mathWidth;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.card {
+  border: 1px solid #DEE2E6;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  margin-top: -67px;
+  &__header {
+    padding-right: -16px;
+    padding-bottom: -16px;
+  }
+  &__content {
+    padding-top: 83px;
+    line-height: 24px;
+  }
+  &__content h6{
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  &__footer{
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #707070;
+  }
+}

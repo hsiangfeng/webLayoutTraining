@@ -1,0 +1,129 @@
+extends ./layout/layout.pug
+
+block content
+  header.header__index.bg-cover.text-dark
+    ul.header__index__content.container.d-flex.flex-column.align-items-end
+      li.fs-36 Promise-Desert 2020 早春系列
+      li.fs-64 看得清，才能看得遠
+  main
+    section.expertise.pb-80.d-flex.d-flex-center.flex-column.bg-light
+      h2.fs-48.text-dark.my-64
+        | 用專業的心，做專業的事
+      .container
+        ul.expertise__list.d-flex
+          li
+            img(src="../images/icon-dollar.svg", alt="")
+            h4.fs-24.text-dark.pb-4 單一價格
+            p 無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。
+          li
+            img(src="../images/icon-clock.svg", alt="")
+            h4.fs-24.text-dark.pb-4 20 分鐘即可取件
+            p 為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。
+          li
+            img(src="../images/icon-heart.svg", alt="")
+            h4.fs-24.text-dark.pb-4 安心售後服務
+            p 我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+          li
+            img(src="../images/icon-glasses.svg", alt="")
+            h4.fs-24.text-dark.pb-4 關於鏡片
+            p 使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+    section.classic.mt-60
+      h2.fs-48.text-dark.mb-60.text-center 經典系列鏡框
+      .container
+        ul.classic__list.text-primary.fs-48
+          li
+            img(src="./images/product-1.png", alt="")
+            .classic__title.ml-24.d-flex.flex-row.d-flex-center
+              img(src="./images/icon-diamond.svg", alt="")
+              span.ml-8 optical
+          li.flex-row-reverse
+            img(src="./images/product-2.png", alt="")
+            .classic__title.mr-24.d-flex.flex-row.d-flex-center
+              img(src="./images/icon-sun.svg", alt="")
+              span.ml-8 sunglasses
+          li
+            img(src="./images/product-3.png", alt="")
+            .classic__title.ml-24.d-flex.flex-row.d-flex-center
+              img(src="./images/icon-thunder.svg", alt="")
+              span.ml-8 functional
+    section.joint.bg-cover.pt-64
+      h2.text-center.text-white.fs-48.mb-60
+        | 聯名設計鏡框
+      .joint__product.d-flex
+        img(src="./images/product-4.png", alt="")
+        .ml-8
+          img(src="./images/product-5.png", alt="")
+          .joint__product__list.d-flex.mt-8
+            img(src="./images/product-6.png", alt="")
+            .joint__moreBlock.ml-8
+              img(src="./images/product-7.png", alt="")
+              .joint__moreBlock__text.fs-72.mt-8
+                a(href="#")
+                  .joint-moreText
+                      | MORE
+                      img(src="../images/icon-arrow.svg", alt="")
+                .joint__moreBlock__more
+      .joint__list.container.mt-60
+        ul.d-flex.fs-72.text-primary
+          li.joint__double.bg-cover
+            p Double A+
+          li.joint__youth.bg-cover
+            p YOUTH
+    section.recommend
+        h2.text-center.text-white.fs-48.mb-60 顧客推薦
+        ul.recommend__list
+          li
+            img(src="./images/rec-1.png", alt="")
+            .card
+              .card__content
+                h6 Jessy
+                p This is a wider card with supporting text below as a natural lead-in to additional content.
+              .card__footer
+                | Last updated 3 mins ago
+            li
+              img(src="./images/rec-2.png", alt="")
+              .card
+                .card__content
+                  h6 Karen
+                  p This is a wider card with supporting text below as a natural lead-in to additional content.
+                .card__footer
+                  | Last updated 3 mins ago
+          li
+            img(src="./images/rec-3.png", alt="")
+            .card
+              .card__content
+                h6 Chelsea
+                p This is a wider card with supporting text below as a natural lead-in to additional content.
+              .card__footer
+                | Last updated 3 mins ago
+          li
+            img(src="./images/rec-4.png", alt="")
+            .card
+              .card__content
+                h6 Jane
+                p This is a wider card with supporting text below as a natural lead-in to additional content.
+              .card__footer
+                | Last updated 3 mins ago
+    section.contact.bg-light.mt-80
+      h2.text-center.fs-48.pt-64.mb-24 聯絡我們
+      .container
+        .contact__form
+          p.mb-20 我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          form.form(action="")
+            .form-group
+              label.form-label(.form-controlfor="name") 姓名
+              input#name.form-control(type="text", name="", placeholder="陳小明")
+            .form-group
+              label.form-label(for="tel") 電話
+              input#tel.form-control(type="tel", name="", placeholder="0912-345-678")
+            .form-group
+              label.form-label(for="email") 電子郵件
+              input#email.form-control(type="email", name="", placeholder="example@email.com")
+            .form-group
+              label.form-label(for="feedback") 意見反應
+              textarea#feedback.form-control(name="feedback", cols="30", rows="10", placeholder="請輸入您的意見")
+            .form-group
+              input#private(type="checkbox", name="")
+              label(for="private") 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+            .form-group.d-flex.d-flex-center
+              button.submit-btn(type="submit") 確認送出

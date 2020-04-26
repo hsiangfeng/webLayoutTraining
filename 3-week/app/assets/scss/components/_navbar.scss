@@ -1,0 +1,24 @@
+.logo {
+  background-image: url('../images/logo.png');
+  background-size: cover;
+  background-position: center center;
+  width: 80px;
+  height: 48.57px;
+  text-indent: 101%;
+  overflow: hidden;
+}
+.navbar {
+  padding-right: 88px;
+  padding-left: 88px;
+  height: 108px;
+  &__list li {
+    margin-right: 64px;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

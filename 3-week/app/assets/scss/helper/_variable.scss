@@ -1,0 +1,40 @@
+$primary: #AA0601;
+$dark: #650300;
+$light: #AA06010D;
+$white: #FFFFFF;
+
+$themes: (
+  'primary': $primary,
+  'dark': $dark,
+  'light': $light,
+  'white': $white,
+);
+
+$fontSize: (
+  14,
+  20,
+  24,
+  26,
+  32,
+  36,
+  48,
+  64,
+  72,
+);
+
+$spacers: (
+  4,
+  8,
+  16,
+  20,
+  24,
+  30,
+  32,
+  42,
+  46,
+  60,
+  62,
+  64,
+  80,
+  144,
+)

@@ -1,0 +1,60 @@
+// 生成背景與文字顏色
+@each $key, $value in $themes {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+// 生成 fontsize
+@each $val in $fontSize {
+  .fs-#{ $val } {
+    font-size: #{$val}px;
+  }
+}
+
+@each $val in $spacers {
+  .pt-#{ $val } {
+    padding-top: #{$val}px;
+  }
+  .pb-#{ $val } {
+    padding-bottom: #{$val}px;
+  }
+  .pl-#{ $val } {
+    padding-left: #{$val}px;
+  }
+  .pr-#{ $val } {
+    padding-right: #{$val}px;
+  }
+  .px-#{ $val } {
+    padding-right: #{$val}px;
+    padding-left: #{$val}px;
+  }
+  .py-#{ $val } {
+    padding-top: #{$val}px;
+    padding-bottom: #{$val}px;
+  }
+
+  .mt-#{ $val } {
+    margin-top: #{$val}px;
+  }
+  .mb-#{ $val } {
+    margin-bottom: #{$val}px;
+  }
+  .ml-#{ $val } {
+    margin-left: #{$val}px;
+  }
+  .mr-#{ $val } {
+    margin-right: #{$val}px;
+  }
+  .mx-#{ $val } {
+    margin-right: #{$val}px;
+    margin-left: #{$val}px;
+  }
+  .my-#{ $val } {
+    margin-top: #{$val}px;
+    margin-bottom: #{$val}px;
+  }
+}

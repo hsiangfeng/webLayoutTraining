@@ -1,0 +1,20 @@
+.header__index {
+  background-image: url('../images/banner.png');
+
+  &__content li:nth-child(1) {
+    padding-top: 350px;
+    
+  }
+  &__content li:last-child {
+    padding-bottom: 440px;
+  }
+}
+
+.header__qa {
+  background-image: url('../images/banner2.png');
+  padding-top: 214px;
+  &__h2{
+    margin-right: 10.1px;
+    line-height: 80px;
+  }
+}

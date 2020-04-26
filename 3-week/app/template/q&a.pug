@@ -1,0 +1,44 @@
+extends ./layout/layout.pug
+
+block content
+  header.header__qa.bg-cover
+    .container.d-flex.align-items-center
+      h2.header__qa__h2.fs-64
+        | 常見問題
+      img(src="../images/help-circle-sharp.svg", alt="")
+  main
+    section.qaMain.container
+      h3.fs-32.mb-16 我想詢問配鏡問題
+      #accordion.qaMain__list
+        .qaMain__accordion.active
+          .qaMain__accordion__header
+            a(href="#").d-flex.justify-content-between
+              | Q1.請問可否自備鏡框單配鏡片？
+              i.fas.fa-chevron-down
+          .qaMain__accordion__body
+            p 
+              | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+              br
+              | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+              br
+              | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+        .qaMain__accordion
+          .qaMain__accordion__header
+            a(href="#").d-flex.justify-content-between
+              | Q2.眼鏡都可以20分鐘取件嗎？
+              i.fas.fa-chevron-up
+        .qaMain__accordion
+          .qaMain__accordion__header
+            a(href="#").d-flex.justify-content-between
+              | Q3.散光鏡片需要額外加價嗎？
+              i.fas.fa-chevron-up
+        .qaMain__accordion
+          .qaMain__accordion__header
+            a(href="#").d-flex.justify-content-between
+              | Q4.我可以使用舊眼鏡的度數配鏡片嗎？
+              i.fas.fa-chevron-up
+        .qaMain__accordion
+          .qaMain__accordion__header
+            a(href="#").d-flex.justify-content-between
+              |  Q5.請問可以單購買鏡框嗎？
+              i.fas.fa-chevron-up

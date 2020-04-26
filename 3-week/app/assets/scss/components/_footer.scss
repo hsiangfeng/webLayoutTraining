@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 27.43px;
+  &__main a {
+    color: white;
+    text-decoration: none;
+  }
+  &__main li {
+    margin-right: 48px;
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+  &__community li {
+    margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__contact {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  &__contactTel {
+    display: flex;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+      margin-left: 23px;
+    }
+  }
+  &__contactEmail{
+    display: flex;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+      margin-left: 12px;
+    }
+  }
+  &__hr {
+    border: 1px solid #FFFFFF;
+  }
+  &__copyList img{
+    margin-right: 38px;
+  }
+  &__private li {
+    margin-right: 62px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__private a {
+    text-decoration: none;
+    color: $white;
+  }
+}

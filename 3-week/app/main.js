@@ -1,0 +1,34 @@
+import './assets/images/logo.png';
+import './assets/images/banner.png';
+import './assets/images/icon-dollar.svg';
+import './assets/images/icon-clock.svg';
+import './assets/images/icon-heart.svg';
+import './assets/images/icon-glasses.svg';
+import './assets/images/icon-sun.svg';
+import './assets/images/icon-thunder.svg';
+import './assets/images/icon-diamond.svg';
+import './assets/images/bg.png';
+import './assets/images/product-1.png';
+import './assets/images/product-2.png';
+import './assets/images/product-3.png';
+import './assets/images/product-4.png';
+import './assets/images/product-5.png';
+import './assets/images/product-6.png';
+import './assets/images/product-7.png';
+import './assets/images/product-8.png';
+import './assets/images/product-9.png';
+import './assets/images/icon-arrow.svg';
+import './assets/images/rec-1.png';
+import './assets/images/rec-2.png';
+import './assets/images/rec-3.png';
+import './assets/images/rec-4.png';
+import './assets/images/icon-fb.svg';
+import './assets/images/icon-ig.svg';
+import './assets/images/icon-line.svg';
+import './assets/images/icon-mail.svg';
+import './assets/images/icon-phone.svg';
+import './assets/images/banner2.png';
+import './assets/images/help-circle-sharp.svg';
+
+import './javascript/all';
+

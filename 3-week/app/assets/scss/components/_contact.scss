@@ -1,0 +1,47 @@
+.contact {
+  padding-bottom: 92px;
+  &__form {
+    margin-right: 252px;
+    margin-left: 252px;
+  }
+  &__form p {
+    line-height: 30px;
+  }
+}
+
+.form {
+  &-group {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-top: 26px;
+      margin-bottom: 0px;
+    }
+  }
+  &-control {
+    display: block;
+    width: 100%;
+    border: 1px solid #000000;
+    height: 50px;
+    padding-left: 16px;
+  }
+  &-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  textarea {
+    height: 136px;
+    padding-top: 14px;
+    padding-left: 16px;
+  }
+  .submit-btn {
+    background-color: $dark;
+    color: $white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 58px;
+    padding-right: 58px;
+    border: 0px;
+    font-size: 16px;
+  }
+}
