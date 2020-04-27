@@ -3,15 +3,30 @@
 }
 
 .recommend__list {
-  $mathWidth: (1200px - (24/3)) / 4;
   display: flex;
   justify-content: center;
-  
+  flex-wrap: wrap;
   li {
-    width: $mathWidth;
+    width: 282px;
     margin-right: 24px;
     &:last-child {
       margin-right: 0px;
+    }
+    @include breakpoint-md() {
+      width: 324px;
+      margin-top: 24px;
+    }
+  }
+  li:nth-child(even){
+    @include breakpoint-md() {
+      margin-left: 12px;
+      margin-right: 0px;
+    }
+  }
+  li:nth-child(odd){
+    @include breakpoint-md() {
+      margin-left: 0px;
+      margin-right: 12px;
     }
   }
 }

@@ -7,3 +7,15 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin breakpoint-md() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-sm() {
+  @media (max-width: 374px) {
+    @content;
+  }
+}

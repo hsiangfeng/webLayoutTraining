@@ -11,6 +11,10 @@
   padding-right: 88px;
   padding-left: 88px;
   height: 108px;
+  @include breakpoint-md() {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
   &__list li {
     margin-right: 64px;
     a {

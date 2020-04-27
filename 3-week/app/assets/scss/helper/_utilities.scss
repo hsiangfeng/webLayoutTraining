@@ -4,11 +4,21 @@
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  @include breakpoint-md() {
+    max-width: 672px;
+  }
+  @include breakpoint-sm() {
+    max-width: 352px;
+  }
+}
+
+.d-md-none {
+  @include breakpoint-md() {
+    display: none;
+  }
 }
 
 .text-center {

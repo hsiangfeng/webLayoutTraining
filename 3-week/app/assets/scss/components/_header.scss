@@ -1,13 +1,9 @@
 .header__index {
   background-image: url('../images/banner.png');
-
-  &__content li:nth-child(1) {
-    padding-top: 350px;
-    
-  }
-  &__content li:last-child {
-    padding-bottom: 440px;
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__qa {

@@ -1,6 +1,11 @@
 .footer {
   padding-top: 36px;
   padding-bottom: 27.43px;
+  &__nav {
+    @include breakpoint-md() {
+      margin-bottom: 24px;
+    }
+  }
   &__main a {
     color: white;
     text-decoration: none;
@@ -10,16 +15,26 @@
     &:last-child {
       margin-left: 0;
     }
+    @include breakpoint-md() {
+      margin-right: 40px;
+    }
   }
   &__community li {
     margin-right: 32px;
     &:last-child {
       margin-right: 0;
     }
+    @include breakpoint-md() {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
   &__contact {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 20px;
   }
   &__contactTel {
     display: flex;
@@ -49,6 +64,9 @@
     margin-right: 62px;
     &:last-child {
       margin-right: 0;
+    }
+    @include breakpoint-md() {
+      margin-right: 24px;
     }
   }
   &__private a {

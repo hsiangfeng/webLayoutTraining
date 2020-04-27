@@ -1,4 +1,8 @@
 .expertise {
+  &__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__list li {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,13 @@
     padding-right: 37px;
     img {
       margin-bottom: 40px;
+    }
+    @include breakpoint-md() {
+      width: 324px;
+      margin-right: 0px;
+      margin-top: 12px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
   &__list li:last-child{

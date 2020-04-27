@@ -2,7 +2,7 @@ extends ./layout/layout.pug
 
 block content
   header.header__index.bg-cover.text-dark
-    ul.header__index__content.container.d-flex.flex-column.align-items-end
+    ul.header__index__content.d-flex.flex-column.align-items-end.mr-48
       li.fs-36 Promise-Desert 2020 早春系列
       li.fs-64 看得清，才能看得遠
   main
@@ -32,17 +32,17 @@ block content
       .container
         ul.classic__list.text-primary.fs-48
           li
-            img(src="./images/product-1.png", alt="")
+            .classic__product--1
             .classic__title.ml-24.d-flex.flex-row.d-flex-center
               img(src="./images/icon-diamond.svg", alt="")
               span.ml-8 optical
-          li.flex-row-reverse
-            img(src="./images/product-2.png", alt="")
+          li.flex-row-reverse.flex-md-row-reverse
+            .classic__product--2
             .classic__title.mr-24.d-flex.flex-row.d-flex-center
               img(src="./images/icon-sun.svg", alt="")
               span.ml-8 sunglasses
           li
-            img(src="./images/product-3.png", alt="")
+            .classic__product--3
             .classic__title.ml-24.d-flex.flex-row.d-flex-center
               img(src="./images/icon-thunder.svg", alt="")
               span.ml-8 functional
@@ -50,13 +50,13 @@ block content
       h2.text-center.text-white.fs-48.mb-60
         | 聯名設計鏡框
       .joint__product.d-flex
-        img(src="./images/product-4.png", alt="")
-        .ml-8
-          img(src="./images/product-5.png", alt="")
+        .joint__product--4
+        .joint__product_main.ml-8
+          .joint__product--5
           .joint__product__list.d-flex.mt-8
-            img(src="./images/product-6.png", alt="")
+            .joint__product--6
             .joint__moreBlock.ml-8
-              img(src="./images/product-7.png", alt="")
+              .joint__product--7
               .joint__moreBlock__text.fs-72.mt-8
                 a(href="#")
                   .joint-moreText
@@ -71,7 +71,7 @@ block content
             p YOUTH
     section.recommend
         h2.text-center.text-white.fs-48.mb-60 顧客推薦
-        ul.recommend__list
+        ul.recommend__list.container
           li
             img(src="./images/rec-1.png", alt="")
             .card

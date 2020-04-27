@@ -1,4 +1,40 @@
 .classic {
+  &__product--1{
+    background-image: url('../images/product-1.png');
+    background-size: cover;
+    background-position: center center;
+    width: 792px;
+    height: 320px;
+    @include breakpoint-md() {
+      width: 410.85px;
+      height: 168px;
+    }
+  }
+
+  &__product--2{
+    background-image: url('../images/product-2.png');
+    background-size: cover;
+    background-position: center center;
+    width: 792px;
+    height: 320px;
+    @include breakpoint-md() {
+      width: 410.85px;
+      height: 168px;
+    }
+  }
+
+  &__product--3{
+    background-image: url('../images/product-3.png');
+    background-size: cover;
+    background-position: center center;
+    width: 792px;
+    height: 320px;
+    @include breakpoint-md() {
+      width: 410.85px;
+      height: 168px;
+    }
+  }
+
   &__list li {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -7,6 +43,10 @@
     align-items: center;
     margin-bottom: 32px;
     text-transform: uppercase;
+    @include breakpoint-md() {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
     &:last-child {
       margin-bottom: 0px;
     }

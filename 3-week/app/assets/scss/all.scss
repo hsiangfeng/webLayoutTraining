@@ -1,9 +1,10 @@
 @import './helper/reset';
+@import './helper/mixin';
 @import './helper/variable';
 @import './helper/flex';
 @import './helper/functions';
 @import './helper/utilities';
-@import './helper/mixin';
+
 
 // components
 @import './components/navbar';
